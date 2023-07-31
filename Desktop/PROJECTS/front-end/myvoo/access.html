@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="access.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./fontawesome-free-6.4.0-web/css/all.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <section class="header head">
+        <nav>
+            <a href="index.html"><img src="image/Myvyoo.svg"></a>
+            <div class="nav-links">
+                <ul class="link">
+                    <li class="home"><a href="index.html">Home</a></li>
+                    <li class="about"><a href="about.html">About</a></li>
+                    <li><a href="access.html"><button id="menu-icons">Get early access</button></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="toggle-btn"><i class="fa fa-bars"></i></div>
+        </nav>
+        <div class="dropdown-menu">
+            <li class="home"><a href="index.html">Home</a></li>
+            <li class="about"><a href="about.html">About</a></li>
+            <li><a href="access.html"><button onclick="myEmail()" id="menu-icons">Get early access</button></a></li>
+        </div>
+    </section>
+
+    <div class="get-access drop">
+        <div class="left-access">
+            <div class="topic">
+                <h1>Become an early adopter</h1>
+                <p>Thanks for your interest ✌🏻. Please fill the form below to get<br>early access to MyVyoo when it
+                    launches.</p>
+            </div>
+            <div class="form">
+                <form action="">
+                    <span class="form1">
+                        <label>What's your name?</label>
+                        <input type="text" placeholder="Enter your full name" name="fullName" Required>
+                    </span>
+                    <span class="form2">
+                        <label>What's your email address?</label>
+                        <input type="email" id="acceptEmail" placeholder="Enter your email address" name="email"
+                            required>
+                    </span>
+                    <span class="form3">
+                        <label>What's your age?</label>
+                        <input type="number" placeholder="Enter your age" min="16" max="25" name="age" required value>
+                    </span>
+                    <span class="form4">
+                        <label for="">What is your gender?</label>
+                        <select name="gender" id="" required value>
+                            <option value="">Choose your Gender</option>
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                        </select>
+                    </span>
+                    <span class="form5">
+                        <label>What is your personality?</label>
+                        <select name="personality" id="" required value>
+                            <option value="">Choose your personality type?</option>
+                            <option value="introvert">Introvert</option>
+                            <option value="extrovert">Extrovert</option>
+                            <option value="ambivert">Ambivert</option>
+                        </select>
+                    </span>
+                    <span class="form6">
+                        <label for="">Which of these identifies you most?</label>
+                        <select name="identification" id="" required value>
+                            <option value="">What identifies you the most?</option>
+                            <option value="student">Student</option>
+                            <option value="9-5 employee">9-5 Employee</option>
+                            <option value="business owner">Business Owner</option>
+                            <option value="content creator">Content Creator</option>
+                            <option value="freelancer">Freelancer</option>
+                            <option value="others">Others (please specify)</option>
+                        </select>
+                    </span>
+                    <span class="form7">
+                        <label for="">Where can we find you?</label>
+                        <select name="social media" id="handle" onclick="displayInput()" required value>
+                            <option value="">Choose a platform</option>
+                            <option value="twitter">Twitter</option>
+                            <option value="instagram">Instagram</option>
+                            <option value="whatsapp">Whatsapp</option>
+                        </select>
+                        <input type="text" id="twitter-input" placeholder="@yourhandle">
+                        <input type="text" id="instagram-input" placeholder="@yourhandle">
+                        <input type="number" id="whatsapp-input" placeholder="Enter your whatsapp number">
+                    </span>
+                    <span class="reg">
+                        <button type="submit" class="register" value="Submit" disabled="disabled">submit</button> 
+                    <span>
+
+                </form>
+            </div>
+        </div>
+        <div class="right-access">
+            <img src="image/img4.png" alt="getaccess">
+        </div>
+    </div>
+
+    <section class="sect5">
+        <div class="sect5-div">
+            <div class="sect5-left">
+                <h1>Join our newsletter</h1>
+                <p>Join our newsletter and never miss out on some exciting<br>
+                    product news, freebies, product offers and more</p>
+                <form class="sect5-label">
+                    <input type="email" placeholder="Enter your email address" Required>
+                    <button type="submit">Join</button>
+                </form>
+            </div>
+            <div class="sect5-right">
+                <img src="image/mail.svg" alt="">
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="upper-footer">
+            <div class="upper1">
+                <h4>Myvyoo Technology</h4>
+                <p>©2023. Myvyoo Technology</p>
+                <p>All rights reserved</p>
+            </div>
+            <div class="upper2">
+                <h4>Early adopters </h4>
+                <h4>Cookie preferences</h4>
+            </div>
+            <div class="upper3">
+                <h4>About us</h4>
+                <h4>Language</h4>
+            </div>
+            <div class="upper4">
+                <h4>Contact us</h4>
+            </div>
+            <div class="upper5">
+                <h4 class="connect"><span><i class="fab fa-facebook"></i></span><span><i
+                            class="fab fa-twitter"></i></span><span><a href="https://www.instagram.com/askmyvyoo/"><i
+                                class="fab fa-instagram"></i></a></span><span><a
+                            href="https://www.linkedin.com/company/myvyoo/"><i class="fab fa-linkedin"></i></a></span>
+                </h4>
+                <p>askmyvyoo@gmail.com</p>
+            </div>
+        </div>
+        <div class="lower-footer">
+            <p>All rights reserved <span>Community guidelines</span> <span>Terms</span> <span>Privacy Policy</span></p>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+    <script>
+        (function() {
+            $('form > input').keyup(function() {
+                var empty = false;
+                $('form > input').each(function() {
+                    if ($(this).val() == '')
+                    {
+                        empty = true;
+                    }
+                });
+                if (empty) 
+                {
+                    $('.register').attr('disabled', 'disabled');
+                }
+                else {
+                    $('.register').removeAttr('disabled');
+                }
+            });
+        })()
+    </script>
+
+</body>
+
+</html>
