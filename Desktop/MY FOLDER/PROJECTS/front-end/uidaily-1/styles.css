@@ -1,0 +1,194 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    font-family: poppins;
+}
+
+body {
+    min-height: 100vh;
+    background-color: #f3f3f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 350px;
+    height: 350px;
+    background-color: #fff;
+    align-items: center;
+    border-radius: 10px;
+}
+.semi-container {
+    margin-left: 40px;
+}
+
+.header {
+    color: #1d3153;
+    font-size: 1em;
+    margin: 60px 0 25px 0px;
+}
+
+.password-info {
+    display: flex;
+   margin-bottom: 20px;
+}
+
+.password-image {
+    background-image: url('images/girl-with-big-smile-classroom.jpg');
+    width: 45px;
+    height: 45px;
+    background-size: cover;
+    border: 1px solid #f3f3f9;
+    border-radius: 50%;
+}
+
+.user-details {
+    margin-left: 10px;
+    color: #1d3153;
+}
+
+.user-occup {
+    font-size: 0.6em;
+    padding-top: 5px;
+    font-weight: 500;
+}
+
+.user-name {
+    font-size: 0.7em;
+    padding-top: 3px;
+}
+
+.password-details {
+    color: #1d3153;
+    margin-bottom: 20px;
+}
+
+.password-details p {
+    font-size: 0.6em;
+    padding-bottom: 2px;
+    font-weight: 500;
+}
+
+.password-home {
+    display: flex;
+    width: 300px;
+    align-items: center;
+}
+
+.enter-details {
+    display: flex;
+    border: 0.5px solid black;
+    height: 35px;
+    width: 230px;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.input-password {
+    border: none;
+    outline: none;
+    align-items: center;
+}
+
+
+
+.fa-lock {
+    margin: 0 4px 0 10px;
+    align-items: center;
+}
+
+.fa-eye {
+    margin-left: 6px;
+}
+
+.enter {
+    display: flex;
+    width: 230px;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.hom {
+    display: flex;
+   align-items: center; 
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 20px;
+  }
+
+ 
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: #fff;
+    border: 1px solid #1d3153;
+    border-radius: 34px;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    height: 15px;
+    content: "";
+    width: 15px;
+    left: 4px;
+    bottom: 2px;
+    background-color: #1d3153;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+    border-radius: 50%;
+  }
+  
+  input:focus+.slider {
+    box-shadow: 0 0 2px #1d3153;
+  }
+  
+  input:checked+.slider:before {
+    -webkit-transform: translateX(17px);
+    -ms-transform: translateX(17px);
+    transform: translateX(17px);
+    background-color: #1d3153;
+  }
+
+  #change2 {
+    font-size: 0.6em;
+    padding-top: 5px;
+    font-weight: 600;
+    color: #1d3153;
+    margin-left: 4px;
+  }
+
+  .submit {
+    background-color: #1d3153;
+    font-size: 0.6em;
+    color: #FFF;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: 500;
+    cursor: pointer;
+  }
+  
+  .reset {
+    color: #1d3153;
+    font-weight: 600;
+    font-size: 0.6em;
+    cursor: pointer;
+  }
+ 
